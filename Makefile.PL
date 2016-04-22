@@ -24,7 +24,7 @@ WriteMakefile(
         (
             META_MERGE => {
                 resources => {
-                    repository => 'https://github.com/zmughal/p5-Font-FreeType',
+                    repository => 'https://github.com/binary-com/perl-Maths-Gauss-XS',
                 },
             }
         ) : ()
