@@ -24,7 +24,7 @@ WriteMakefile(
         (
             META_MERGE => {
                 resources => {
-                    repository => 'https://github.com/binary-com/perl-Maths-Gauss-XS',
+                    repository => 'https://github.com/binary-com/perl-Math-Gauss-XS',
                 },
             }
         ) : ()
