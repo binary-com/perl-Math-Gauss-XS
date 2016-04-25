@@ -61,8 +61,7 @@ The benchmark results are
 
 =head1 SOURCE CODE
 
-L<GitHub|https://github.com/binary-com/perl-Test-NoLeaks>
-
+L<GitHub|https://github.com/binary-com/perl-Math-Gauss-XS>
 
 
 =head1 AUTHOR
