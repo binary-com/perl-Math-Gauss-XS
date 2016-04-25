@@ -30,7 +30,7 @@ pdf(...)
         NV s = items > 2 ? SvNV(ST(2)) : 1;
 
         if (s <= 0) {
-          Perl_croak("Can't evaluate Math::Gauss:pdf for $s=%f not strictly positive", s);
+          Perl_croak(aTHX_ "Can't evaluate Math::Gauss:pdf for $s=%f not strictly positive", s);
         }
 
         RETVAL = _pdf(x, m, s);
@@ -46,7 +46,7 @@ cdf(...)
         NV s = items > 2 ? SvNV(ST(2)) : 1;
 
         if (s <= 0) {
-          Perl_croak("Can't evaluate Math::Gauss:cdf for $s=%f not strictly positive", s);
+          Perl_croak(aTHX_ "Can't evaluate Math::Gauss:cdf for $s=%f not strictly positive", s);
         }
 
         NV z = (x - m)/s;
@@ -68,7 +68,7 @@ NV
 inv_cdf(NV x)
     CODE:
         if ( x<=0.0 || x>=1.0 ) {
-          Perl_croak("Can't evaluate Math::Gauss::inv_cdf for $x=%f outside ]0,1[", x);
+          Perl_croak(aTHX_ "Can't evaluate Math::Gauss::inv_cdf for $x=%f outside ]0,1[", x);
         }
 
         NV t = (x < 0.5) ? sqrt(-2.0 * log(x)) : sqrt( -2.0*log(1.0 - x) );
