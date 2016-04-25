@@ -1,0 +1,7 @@
+lib/Math/Gauss/XS.pm
+LICENSE
+Makefile.PL
+MANIFEST			This list of files
+README.md
+t/Math-Gauss.t
+XS.xs
