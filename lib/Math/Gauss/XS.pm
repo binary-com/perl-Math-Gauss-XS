@@ -2,7 +2,7 @@ package Math::Gauss::XS;
 use warnings;
 use strict;
 
-our $VERSION = '0.01_2';
+our $VERSION = '0.01_3';
 
 require Exporter;
 our @ISA = qw( Exporter );
