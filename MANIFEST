@@ -5,3 +5,4 @@ MANIFEST			This list of files
 README.md
 t/Math-Gauss.t
 XS.xs
+Changes

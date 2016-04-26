@@ -2,7 +2,7 @@ package Math::Gauss::XS;
 use warnings;
 use strict;
 
-our $VERSION = '0.01_4';
+our $VERSION = '0.01';
 
 require Exporter;
 our @ISA = qw( Exporter );
@@ -14,7 +14,7 @@ XSLoader::load('Math::Gauss::XS', $VERSION);
 
 =head1 NAME
 
-Math::Gauss - Gaussian distribution function and its inverse, fast XS version
+Math::Gauss::XS - Gaussian distribution function and its inverse, fast XS version
 
 =head1 VERSION
 
