@@ -2,6 +2,9 @@
 
 Math::Gauss - Gaussian distribution function and its inverse, fast XS version
 
+[![Build Status](https://travis-ci.org/binary-com/perl-Math-Gauss-XS.svg?branch=master)](https://travis-ci.org/binary-com/perl-Math-Gauss-XS)
+[![codecov](https://codecov.io/gh/binary-com/perl-Math-Gauss-XS/branch/master/graph/badge.svg)](https://codecov.io/gh/binary-com/perl-Math-Gauss-XS)
+
 # VERSION
 
 0.01
