@@ -6,8 +6,8 @@ our $VERSION = '0.01';
 
 require Exporter;
 our @ISA = qw( Exporter );
-our %EXPORT_TAGS = ( 'all' => [qw( pdf cdf inv_cdf )] );
-Exporter::export_ok_tags( 'all' );
+our %EXPORT_TAGS = ('all' => [qw( pdf cdf inv_cdf )]);
+Exporter::export_ok_tags('all');
 
 require XSLoader;
 XSLoader::load('Math::Gauss::XS', $VERSION);
@@ -114,6 +114,5 @@ CONSEQUENTIAL DAMAGES ARISING IN ANY WAY OUT OF THE USE OF THE PACKAGE,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 =cut
-
 
 1;
