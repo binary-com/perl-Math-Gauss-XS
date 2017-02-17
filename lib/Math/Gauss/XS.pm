@@ -33,7 +33,7 @@ Math::Gauss::XS - Gaussian distribution function and its inverse, fast XS versio
 =head1 SYNOPSIS
 
   use Math::Gauss::XS ':all';
-
+  my ($p, $c, $z, $x, $m, $s); # intialize them
   $p = pdf( $z );
   $p = pdf( $x, $m, $s );
 
@@ -58,6 +58,8 @@ The benchmark results are
  Benchmark: timing 30000000 iterations of pp/inv_cdf, xs/inv_cdf...
  pp/inv_cdf: 15 wallclock secs (16.02 usr +  0.00 sys = 16.02 CPU) @ 1872659.18/s (n=30000000)
  xs/inv_cdf:  2 wallclock secs ( 2.18 usr +  0.00 sys =  2.18 CPU) @ 13761467.89/s (n=30000000)
+
+=for Pod::Coverage cdf inv_cdf pdf
 
 =head1 SOURCE CODE
 
