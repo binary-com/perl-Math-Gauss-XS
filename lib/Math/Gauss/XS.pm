@@ -2,12 +2,12 @@ package Math::Gauss::XS;
 use warnings;
 use strict;
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 require Exporter;
 our @ISA = qw( Exporter );
-our %EXPORT_TAGS = ( 'all' => [qw( pdf cdf inv_cdf )] );
-Exporter::export_ok_tags( 'all' );
+our %EXPORT_TAGS = ('all' => [qw( pdf cdf inv_cdf )]);
+Exporter::export_ok_tags('all');
 
 require XSLoader;
 XSLoader::load('Math::Gauss::XS', $VERSION);
@@ -33,7 +33,7 @@ Math::Gauss::XS - Gaussian distribution function and its inverse, fast XS versio
 =head1 SYNOPSIS
 
   use Math::Gauss::XS ':all';
-
+  my ($p, $c, $z, $x, $m, $s); # intialize them
   $p = pdf( $z );
   $p = pdf( $x, $m, $s );
 
@@ -59,6 +59,8 @@ The benchmark results are
  pp/inv_cdf: 15 wallclock secs (16.02 usr +  0.00 sys = 16.02 CPU) @ 1872659.18/s (n=30000000)
  xs/inv_cdf:  2 wallclock secs ( 2.18 usr +  0.00 sys =  2.18 CPU) @ 13761467.89/s (n=30000000)
 
+=for Pod::Coverage cdf inv_cdf pdf
+
 =head1 SOURCE CODE
 
 L<GitHub|https://github.com/binary-com/perl-Math-Gauss-XS>
@@ -73,47 +75,6 @@ binary.com, C<< <perl at binary.com> >>
 Please report any bugs or feature requests to
 L<https://github.com/binary-com/perl-Math-Gauss-XS/issues>.
 
-=head1 LICENSE AND COPYRIGHT
-
-Copyright (C) 2016 binary.com
-
-This program is free software; you can redistribute it and/or modify it
-under the terms of the the Artistic License (2.0). You may obtain a
-copy of the full license at:
-
-L<http://www.perlfoundation.org/artistic_license_2_0>
-
-Any use, modification, and distribution of the Standard or Modified
-Versions is governed by this Artistic License. By using, modifying or
-distributing the Package, you accept this license. Do not use, modify,
-or distribute the Package, if you do not accept this license.
-
-If your Modified Version has been derived from a Modified Version made
-by someone other than you, you are nevertheless required to ensure that
-your Modified Version complies with the requirements of this license.
-
-This license does not grant you the right to use any trademark, service
-mark, tradename, or logo of the Copyright Holder.
-
-This license includes the non-exclusive, worldwide, free-of-charge
-patent license to make, have made, use, offer to sell, sell, import and
-otherwise transfer the Package with respect to any patent claims
-licensable by the Copyright Holder that are necessarily infringed by the
-Package. If you institute patent litigation (including a cross-claim or
-counterclaim) against any party alleging that the Package constitutes
-direct or contributory patent infringement, then this Artistic License
-to you shall terminate on the date that such litigation is filed.
-
-Disclaimer of Warranty: THE PACKAGE IS PROVIDED BY THE COPYRIGHT HOLDER
-AND CONTRIBUTORS "AS IS' AND WITHOUT ANY EXPRESS OR IMPLIED WARRANTIES.
-THE IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR
-PURPOSE, OR NON-INFRINGEMENT ARE DISCLAIMED TO THE EXTENT PERMITTED BY
-YOUR LOCAL LAW. UNLESS REQUIRED BY LAW, NO COPYRIGHT HOLDER OR
-CONTRIBUTOR WILL BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, OR
-CONSEQUENTIAL DAMAGES ARISING IN ANY WAY OUT OF THE USE OF THE PACKAGE,
-EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-
 =cut
-
 
 1;
