@@ -3,6 +3,8 @@ alias:
     run:
       command: |
         cpm install -g --no-test Dist::Zilla Dist::Zilla::App::Command::cover ExtUtils::MakeMaker
+        # TO reviewer: 
+        # TODO please remind me to remove this line after new version of this pluginbundle module released
         cpanm -n https://github.com/chylli-binary/perl-Dist-Zilla-PluginBundle-Author-DERIV.git@add-exclude-file-option
       name: Install Dzil
   - &install_author_deps
