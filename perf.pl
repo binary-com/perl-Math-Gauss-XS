@@ -1,3 +1,5 @@
+use strict;
+use warnings;
 use Benchmark qw(:all);
 use Math::Gauss::XS;
 use Math::Gauss;
