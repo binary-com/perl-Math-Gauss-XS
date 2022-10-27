@@ -18,7 +18,7 @@ alias:
         # see https://github.com/team-at-cpan/Dist-Zilla-Plugin-PodInherit/issues/1 to check why we not use 
         # dzil listdeps --missing directly here
         cpanm -n --installdeps .
-        dzil -vv listdeps --author --missing --cpanm-versions | xargs cpanm -n
+        dzil listdeps --author --missing --cpanm-versions | xargs cpanm -n
  
 jobs:
   test:
