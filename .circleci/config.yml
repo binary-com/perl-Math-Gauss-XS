@@ -3,7 +3,7 @@ alias:
     run:
       command: |
         cpm install -g --no-test Dist::Zilla Dist::Zilla::App::Command::cover ExtUtils::MakeMaker
-        cpanm -n https://github.com/chylli-binary/perl-Dist-Zilla-PluginBundle-Author-DERIV.git@add-exclude-file-option
+        cpanm -n https://github.com/binary-com/perl-Dist-Zilla-PluginBundle-Author-DERIV.git@ea50c97f20d18e3f9835737b67b4f7395b34e3f0
       name: Install Dzil
   - &install_author_deps
     run: 
