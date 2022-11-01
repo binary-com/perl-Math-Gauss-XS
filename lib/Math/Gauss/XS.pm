@@ -5,7 +5,7 @@ use strict;
 our $VERSION = '0.02';
 
 require Exporter;
-our @ISA = qw( Exporter );
+our @ISA         = qw( Exporter );
 our %EXPORT_TAGS = ('all' => [qw( pdf cdf inv_cdf )]);
 Exporter::export_ok_tags('all');
 
